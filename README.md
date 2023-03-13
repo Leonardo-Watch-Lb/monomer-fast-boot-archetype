@@ -20,7 +20,7 @@
 1.2 生成自定义骨架
 1.2.1 引入骨架依赖
 在项目的根pom中引入骨架插件，第1.1.1步的 archetype-catalog.xml 就是为此服务的。
-```java
+```xml
 <build>
   <plugins>
     <plugin>

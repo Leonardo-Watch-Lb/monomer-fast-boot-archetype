@@ -14,7 +14,7 @@
 ![image.png](https://cdn.nlark.com/yuque/0/2023/png/2475288/1678708789516-bb1b4a43-9b65-43a4-8c26-e7242e516070.png#averageHue=%23f1f4f8&clientId=u47ed04e0-4648-4&from=paste&height=730&id=u70109bbe&name=image.png&originHeight=730&originWidth=999&originalType=binary&ratio=1&rotation=0&showTitle=false&size=96378&status=done&style=none&taskId=u2217147f-14bd-43f8-a8ee-b84cca55b1b&title=&width=999)
 ## 1.2 生成自定义骨架
 ### 1.2.1 引入骨架依赖
-在项目的根pom中引入骨架插件，第1.1.1步的 archetype-catalog.xml 就是为此服务的。
+在项目的根pom中引入骨架插件，第1.1.1步的 archetype-catalog.xml 就是为此服务的
 ```xml
 <build>
   <plugins>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.7.9</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>org.example.scaffolding</groupId>
+    <artifactId>monomer-demo</artifactId>
+    <version>${own-project.parent.version}</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>infrastructure</module>
+        <module>domain</module>
+        <module>application</module>
+        <module>access-web</module>
+        <module>access-service-impl</module>
+        <module>access-facade</module>
+        <module>bootstrap</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <own-project.parent.version>1.0.1-SNAPSHOT</own-project.parent.version>
+        <own-project.bootstrap.version>${project.version}</own-project.bootstrap.version>
+        <own-project.access-service-impl.version>${project.version}</own-project.access-service-impl.version>
+        <own-project.access-web.version>${project.version}</own-project.access-web.version>
+        <own-project.access-facade.version>${project.version}</own-project.access-facade.version>
+        <own-project.application.version>${project.version}</own-project.application.version>
+        <own-project.domain.version>${project.version}</own-project.domain.version>
+        <own-project.infrastructure.version>${project.version}</own-project.infrastructure.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!--系统依赖 START-->
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>infrastructure</artifactId>
+                <version>${own-project.infrastructure.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>domain</artifactId>
+                <version>${own-project.domain.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>bootstrap</artifactId>
+                <version>${own-project.bootstrap.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>application</artifactId>
+                <version>${own-project.application.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>access-facade</artifactId>
+                <version>${own-project.access-facade.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>access-service-impl</artifactId>
+                <version>${own-project.access-service-impl.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>access-web</artifactId>
+                <version>${own-project.access-web.version}</version>
+            </dependency>
+            <!--系统依赖 END-->
+
+            <!--mybatis-plus-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>3.5.2</version>
+            </dependency>
+
+            <!--通用依赖-->
+            <dependency>
+                <groupId>com.alibaba.fastjson2</groupId>
+                <artifactId>fastjson2</artifactId>
+                <version>2.0.16</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>31.1-jre</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.12.0</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-collections</groupId>
+                <artifactId>commons-collections</artifactId>
+                <version>3.2.1</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>2.11.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.26</version>
+            </dependency>
+
+            <!--oss-->
+            <dependency>
+                <groupId>io.minio</groupId>
+                <artifactId>minio</artifactId>
+                <version>8.4.3</version>
+            </dependency>
+            <dependency>
+                <groupId>com.aliyun.oss</groupId>
+                <artifactId>aliyun-sdk-oss</artifactId>
+                <version>3.8.0</version>
+            </dependency>
+
+
+        </dependencies>
+    </dependencyManagement>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-archetype-plugin</artifactId>
+                <version>3.2.1</version>
+                <configuration>
+                    <properties>./archetype.properties</properties>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

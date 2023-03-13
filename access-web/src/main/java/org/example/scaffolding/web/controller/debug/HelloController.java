@@ -1,4 +1,4 @@
-package org.example.scaffolding.controller;
+package org.example.scaffolding.web.controller.debug;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

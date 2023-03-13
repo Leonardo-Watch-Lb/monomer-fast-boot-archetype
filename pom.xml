@@ -143,7 +143,50 @@
                     <properties>./archetype.properties</properties>
                 </configuration>
             </plugin>
+
+            <!-- todo 暂时不需要 -->
+            <!--<plugin>-->
+            <!--    <artifactId>maven-resources-plugin</artifactId>-->
+            <!--    <version>3.3.0</version>-->
+            <!--    <executions>-->
+            <!--        <execution>-->
+            <!--            <id>copy-resources</id>-->
+            <!--            &lt;!&ndash; bind to a phase, required &ndash;&gt;-->
+            <!--            <phase>validate</phase>-->
+            <!--            <goals>-->
+            <!--                <goal>copy-resources</goal>-->
+            <!--            </goals>-->
+            <!--            <configuration>-->
+            <!--                <outputDirectory>${basedir}/../target/config</outputDirectory>-->
+            <!--                <resources>-->
+            <!--                    <resource>-->
+            <!--                        <directory>src/main/resources</directory>-->
+            <!--                    </resource>-->
+            <!--                </resources>-->
+            <!--            </configuration>-->
+            <!--        </execution>-->
+            <!--    </executions>-->
+            <!--</plugin>-->
+
         </plugins>
+
+        <!-- todo 暂时不需要 -->
+        <!--<resources>-->
+        <!--    <resource>-->
+        <!--        <directory>src/main/java</directory>-->
+        <!--        <includes>-->
+        <!--            <include>**/*.xml</include>-->
+        <!--        </includes>-->
+        <!--    </resource>-->
+        <!--    <resource>-->
+        <!--        <directory>src/main/resources</directory>-->
+        <!--        <includes>-->
+        <!--            <include>**/*.xml</include>-->
+        <!--            <include>**/*.properties</include>-->
+        <!--        </includes>-->
+        <!--    </resource>-->
+        <!--</resources>-->
+
     </build>
 
 </project>

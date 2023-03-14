@@ -41,7 +41,7 @@
 - artifactId
 - version
 
-记住这三个东东，准备使用骨架
+记住这三个东东，准备使用骨架 
 ### 1.3.2 使用骨架
 创建项目时使用骨架，自定义骨架一般需要添加
 ![image.png](https://cdn.nlark.com/yuque/0/2023/png/2475288/1678709534357-e265107d-1620-4de0-8875-8656ae5a3618.png#averageHue=%23f3f5f8&clientId=u47ed04e0-4648-4&from=paste&height=802&id=u5d07b4b5&name=image.png&originHeight=802&originWidth=949&originalType=binary&ratio=1&rotation=0&showTitle=false&size=91473&status=done&style=none&taskId=u9c674453-db63-4e19-8f4b-9ff9bb558c7&title=&width=949)
